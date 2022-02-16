@@ -1,11 +1,11 @@
 import socket
 
 server = socket.socket(socket.AF_INET,socket.SOCK_STREAM) # создаем сервер
-server.bind(("localhost", 1111)) # привязываем сервер к локальному порту
+server.bind(("localhost", 1111)) # привязываем сервер
 
 server.listen()
 
-client, address = server.accept() # принял клиента
+client, address = server.accept() 
 
 flag= True
 
