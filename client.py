@@ -18,13 +18,13 @@ while enter:
             while flag:
                 client.send(input("Пользователь1: ").encode("utf-8"))
                 msg= client.recv(1024).decode("utf-8")
-            if msg == "quit" :
-                flag =False
-            else:
-                print(msg)
+                if msg == "quit" :
+                   flag =False
+                else:
+                   print(msg)
         else:
-            print("не верный пароль")
+            print("Не верный пароль")
     else:
-        query = "wrong"
+        query = "Не верный логин"
         client.close()
 
